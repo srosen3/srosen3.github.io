@@ -1,0 +1,305 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Shane Rosen Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<a href="../../index.html" class="logo">Home</a>
+				</header>
+
+			<!-- Nav -->
+				<nav id="nav">
+					<ul class="links">
+						<li><a href="../../index.html">Home</a></li>
+						<li class="active"><a href="../projects.html">Projects</a></li>
+						<li><a href="../../elements.html">Elements Reference</a></li>
+					</ul>
+					<ul class="icons">
+						<li><a href="jp-rapp-summary.html">日本語切り替え</a></li>
+						<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> -->
+						<!-- <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
+						<!-- <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->						
+						<li><a href="https://www.linkedin.com/in/shane-rosen/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<!-- <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li> -->
+						
+					</ul>
+				</nav>
+
+			<!-- Main -->
+				<div id="main">
+	
+					<!-- Post -->
+						<section class="post">
+							
+							<header class="major"> 
+								<!-- <span class="date">April 25, 2017</span> -->
+								<h2>Rental Apartment Price Predictor</h2>
+								
+								
+								<section class="buttons">
+					
+									<ul class="actions">
+										<li><a href="rapp-summary.html" class="button primary">Summary</a></li>
+										<li><a href="rapp-model.html" class="button">Model App</a></li>
+									</section>
+							
+								<p>
+									Apartment-hunters in Tokyo may find themselves overwhelmed as they generally lack information to make informed decisions.
+									Most importantly, it is difficult to know if they are getting a fair price.
+									Thus, I have made an end-to-end solution to predict a Rental Apartment Prices- scraping data on over 200k rental apartments in Tokyo, training and ML Model, and deploying it through a user friendly web app.										
+									</p>
+							</header>
+
+							<div class="image main"><img src="../../images/small-george-kedenburg-iii-RmPylz0htdA-unsplash.jpg" alt="" height="50%" width="50%"/>
+								<p style="font-size: small">
+									Photo by <a href="https://unsplash.com/@gk3?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">George Kedenburg III</a> on <a href="https://unsplash.com/s/photos/partments-tokyo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+								</p>
+							</div>
+							
+
+
+							<!-- <p>Hi<font size="+2">This is bigger text.</font></p>
+							<p style="font-size: x-small">Hello Campers...</p>
+							<p>This is a paragraph and <small>smaller text goes here</small></p>
+							<p><span class="small">This is some smaller text.</span></p>
+							<p>test</p>
+							-->
+
+
+
+							<div class = "section goal">
+								<h2>Project Goal</h2>
+								<p>
+									1) To build a Rental Apartment Price Prediction Model.  <br>
+									2) To gain knowledge of Web Scraping, deploying a model on the web, and make a website<br>
+								</p>
+							</div>
+							
+							
+							<div class = "section problem">
+								<h2>The Problem</h2>
+									<p>
+									I personally have rented three apartments while living in Japan, 
+									and while one would like the best apartment for the best price, each time I remember thinking that the customer is at a clear disadvantage.
+									<!-- The first apartment, I was new to Japan and my company found a place for its new workers. 
+									The second apartment,  I had to move across the country to Tokyo for a new job and was limited in time, knowledge, and ability to do phyiscal viewings.
+									The third apartment, I had ample time, and knowledge to leverage in my search. -->
+									Each time, I had more knowledge and language ability to leverage in my search.
+									For the greatest advantage, each time I moved I also spent more time and effort to find the best deal.	
+									<p>
+									<b>
+										Despite this, or maybe due to this, I noticed constantly that I, the consumer was at an overwhelming disadvantage when it came to finding a good price for the following reasons.
+									</b>
+									</p>
+
+
+									<dl>
+										<dt>1. The customer has unequal access to information.</dt>
+										<dd>
+											<p>In other words, the customer has access to only a portion of information, which is difficult to analyze. 
+												You may have access to whatever listings are shown on company websites/apps.  
+												These are generally posted by agencies.  However - and this will be discussed in a separate post - there is another database only accessible by those in the industry which has data on all the listings.  
+												Thus, the demand side - consumer always has less information than the supply side - agents, management companies, and owners.
+											</p>
+										</dd>
+										<dt>2. The customer is generally working under a mid-high level of stress, and time constraints.</dt>
+										<dd>
+											<p>While it is sometimes possible to "hold" your spot as first to sign the contract,
+												it is not uncommon for agents or managements companies to impose strict timelines for decisions.
+												Not only that, but life happens.  In these times searching every website, every area, and gathering all the data is optimal, but unrealistic.
+												Consumers generally do not have enough information to make truly informed decisions.
+											</p>
+										</dd>
+										<dt>3. Thus, the customer has little to no bargaining power.</dt>
+										<dd>
+											<p>
+												In economic terms, Tokyo is an environment of near perfect-competition.  
+												Meaning that there is a match between supply and demand of apartments.  
+												Thus, there is little room for negotiation in price.  
+												At least, this is what the agents and management companies all said.  
+												Due to this lack of transparency, it is difficult to know if an individual should even attempt negotiations.
+												If the listing is truly a fair price then trying to bargain, or wait comes with a risk.  
+												Owners have little incentive to deal with problematic individuals.</p>
+										</dd>
+									</dl>
+
+
+
+
+									<p>
+					
+										I hope to alleviate this information imbalance in understanding rental apartment prices through this work.
+									
+									</ol>							
+									</p>
+							</div>
+							
+
+
+							<!-- <div class = "section reins"> 
+								<h2>REINS Description</h2>
+							</div> -->
+
+
+
+							<div class = "solution">
+								<h2>End-to-End Solution</h2>
+								<p>
+								I hoped to alleviate the above problem statement by giving more information to the consumers with this app.  
+								By analyzing large amounts of apartments throughout Tokyo, 
+								I have aggregated a large amount of data, making self anaylsis possible.  However, this is already available on some of the larger sites.
+								</p>
+								
+								<p>
+								Thus, I also built a Machine Learning Model which can predict the monthly rent price of an apartment.  
+								</p>
+
+								<p>
+								By inputting information related to a general apartment description, or a specific apartment you are looking at, an individual can gain insight into a fair rental price to use while apartment-hunting, or potentially during negotiation.<br>
+								</p>
+
+								<p>
+								As the whole point of this work is that consumers do not have access to the full amount of information, I also had to start from zero, and create an end-to-end solution.<br>
+								</p>
+								
+								<ol>
+									<li>
+										First, <b>I created a Web Scraper to get the data</b>. At the time of creation, I could not find a nice database API.  
+										There were some which had only limited information, and those which had more detailed information did not work for me. 
+										However, part of this exercise was to learn web scraping, so I built a web scraper to search for Tokyo Apartments across all areas 
+										(not just limited to the 23 Wards) of Tokyo from publicly accessible websites.
+									</li>  
+									<li>
+										Second, <b>I had to clean the raw data to create a useful dataset</b>.  
+										One of the large problems came from the fact that these postings are not pulled directly from the centralized database, but made by individual agents.  
+										Despite websites having a specific format, there was a high variance in the inputs, <b>ie. mistakes</b>.  
+										This required a fair bit of cleaning to make sure all properties had correct features.  
+										<!-- One of the more interesting findings was two listings over 100 years old.  
+										One seemed purely a mistake, as the ‘Construction Date’ was 111/1/1.  
+										However, the other listing had a reasonable input date, which led me to looking at some very interesting pictures. -->
+									</li>
+										<span class="br"></span>
+										Another problem is how to treat stations, as listing prices in Tokyo are heavily influenced by not only the area, but also the specific station. 
+										 Creating a set of pure Dummy Variables is one idea, but there are over 80 Lines alone, each having on average of 10-20 stations.  
+										 This results in potentially inefficient overhead and is a point of consideration throughout the work.</li>
+									<li>
+										Third, <b>it was time to train the ML Model</b> after cleaning the inputs, and creating the dataset.
+											This part was fairly straight forward, testing out a handful of linear/tree based models, then optimizing the parameters.
+										
+									</li>
+									<li>
+										Fourth, <b>I created a web app to allow users to input their specific features</b> – such as nearby station, type of apartment, etc.
+									</li>
+								</ol>
+							</div>
+
+
+							<div class = "future">
+								<h2>Future Work</h2>
+								<p>
+								To increase model performance there are two main tasks that I can immediately foresee.
+								<ol>
+									<li><b>Get more data</b> - improve my web scraping pipeline and implement it over a period of time.
+										This is especially important as Tokyo has not only 23 Wards, but areas beyond that.
+										Similarly, there are over 80 Train Lines, and hunreds of individual stations.
+										I have included all of these in the scope of the model, but they play a large role in the price of an apartment, and ensuring each area has sufficient data requires much more work.
+									</li>
+									<li><b>Re-work Features</b> - related to the above, there are a variety of ways to handle the cateogrical variables in this work.
+										The real problem comes from the sheer amount of classes in each variable, and the fact that they cannot be simply encoded to continuous variables.
+										I am in the process of trying various datasets, and experimenting which has the most efficient outcome.
+									</li>
+								</ol>
+								</p>
+							</div>
+
+							<!-- </section> -->
+						
+
+
+							
+						</section>
+
+				</div>
+
+			<!-- Footer -->
+				<!-- <footer id="footer">
+					<section>
+						<form method="post" action="#">
+							<div class="fields">
+								<div class="field">
+									<label for="name">Name</label>
+									<input type="text" name="name" id="name" />
+								</div>
+								<div class="field">
+									<label for="email">Email</label>
+									<input type="text" name="email" id="email" />
+								</div>
+								<div class="field">
+									<label for="message">Message</label>
+									<textarea name="message" id="message" rows="3"></textarea>
+								</div>
+							</div>
+							<ul class="actions">
+								<li><input type="submit" value="Send Message" /></li>
+							</ul>
+						</form>
+					</section>
+					<section class="split contact">
+						<section class="alt">
+							<h3>Address</h3>
+							<p>1234 Somewhere Road #87257<br />
+							Nashville, TN 00000-0000</p>
+						</section>
+						<section>
+							<h3>Phone</h3>
+							<p><a href="#">(000) 000-0000</a></p>
+						</section>
+						<section>
+							<h3>Email</h3>
+							<p><a href="#">info@untitled.tld</a></p>
+						</section>
+						<section>
+							<h3>Social</h3>
+							<ul class="icons alt">
+								<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							</ul>
+						</section>
+					</section>
+				</footer> -->
+
+			<!-- Copyright -->
+				<div id="copyright">
+					<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+				</div>
+
+		</div>
+
+	<!-- Scripts -->
+		<script src="../../assets/js/jquery.min.js"></script>
+		<script src="../../assets/js/jquery.scrollex.min.js"></script>
+		<script src="../../assets/js/jquery.scrolly.min.js"></script>
+		<script src="../../assets/js/browser.min.js"></script>
+		<script src="../../assets/js/breakpoints.min.js"></script>
+		<script src="../../assets/js/util.js"></script>
+		<script src="../../assets/js/main.js"></script>
+
+	</body>
+</html>
