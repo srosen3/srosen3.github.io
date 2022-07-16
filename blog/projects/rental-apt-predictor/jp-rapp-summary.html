@@ -1,0 +1,242 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Shane Rosen PortfolioP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../assets/css/jp-main.css" />
+		<noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<a href="../../index.html" class="logo">Home</a>
+				</header>
+
+			<!-- Nav -->
+				<nav id="nav">
+					<ul class="links">
+						<li><a href="../../jp-index.html">Home</a></li>
+						<li class="active"><a href="../projects.html">Projects</a></li>
+						<li><a href="../../elements.html">Elements Reference</a></li>
+					</ul>
+					<ul class="icons">
+						<li><a href="rapp-summary.html">Switch to English</a></li>
+						<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> -->
+						<!-- <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
+						<!-- <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->						
+						<li><a href="https://www.linkedin.com/in/shane-rosen/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<!-- <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li> -->
+						
+					</ul>
+				</nav>
+
+			<!-- Main -->
+				<div id="main">
+	
+					<!-- Post -->
+						<section class="post">
+							
+							<header class="major"> 
+								<!-- <span class="date">April 25, 2017</span> -->
+								<h2>賃貸住宅値段<br>予測モデル</h2>
+								
+								<section class="buttons">
+					
+									<ul class="actions">
+										<li><a href="jp-rapp-summary.html" class="button primary">概要</a></li>
+										<li><a href="jp-rapp-model.html" class="button">モデルAPP</a></li>
+									</section>
+							
+								<p>
+									東京の賃貸住宅を探す人は常に情報が不十分な状態であり、決断に迷ってしまうことが多いだろう。
+									最も、希望のアパートが適正な価格であるか否かの判断が難しい。
+									そのため、賃貸マンションの価格を予測するエンドツーエンドのソリューションを構築した。
+									東京の20万件以上の賃貸マンションのデータを収集し、MLモデルをトレーニングし、使いやすいWEBアプリをデプロイした。
+									</p>
+							</header>
+
+							<div class="image main"><img src="../../images/small-george-kedenburg-iii-RmPylz0htdA-unsplash.jpg" alt="" height="50%" width="50%"/>
+								<p style="font-size: small">
+									Photo by <a href="https://unsplash.com/@gk3?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">George Kedenburg III</a> on <a href="https://unsplash.com/s/photos/partments-tokyo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+								</p>
+							</div>
+
+
+
+							<div class = "section goal">
+								<h2>目的</h2>
+								<p>
+									1) 賃貸住宅の値段予測するモデルを開発.  <br>
+									2) End-to-Endの知識を身に付く、Webスクレイピング、Web上のモデルデポロイ、Websiteを作ること、など<br>
+								</p>
+							</div>
+							
+							
+							<div class = "section problem">
+								<h2>課題の定義</h2>
+									<p>
+									今現在、私自身が日本に来てからアパートの３軒目。
+									私が探している間に当然低価格で高いレベルの住宅を求める一方、毎回毎回顧客である自分が圧倒的に不利になっているとの印象があった。
+									
+									引っ越す度に最強の住宅を見つけるために知識や言語力を上げ、時間も努力を尽くしたつもりで探していきた。
+									<p>
+									<b>
+										この努力に関わらず、もしくはこの努力により、以下の点で顧客である私が圧倒的に不利である理由に気づいた。
+									</b>
+									</p>
+
+
+									<dl>
+										<dt>1. 買い手は非対称な情報を保有する。</dt>
+										<dd>
+											<p>
+												つまり、顧客の入手できる情報は一部に過ぎず、よって賃貸の分析が難しい。
+												公開なサイトやアプリに記載された情報を活用しても、この情報が不動産が運営している。
+												ただその裏、業界の者がアクセスできるデータベースがあり、そのデータベースを元に不動産の物件情報を作成している。
+												そのため、買い手（顧客）は必ず売り手（不動産、管理会社、貸主）より少ない情報を保有、入手できる。
+											</p>
+										</dd>
+										<dt>2. 買い手は基本時間やお金の制限があり、余裕の少ない状態である.</dt>
+										<dd>
+											<p>
+												希望の物件の契約ができる人の順番で並ぶこともある；１番手、２番手、３番手、など
+												ただ、この制度に入ると決断までに厳しい制限も伴うことがある。
+												この厳しい探しの中、全てのサイト、エリア、物件を探してあらゆるのデータを集めるのが理想に過ぎない。
+												「買い手」は基本そんな無限の時間や余裕がないので、最適な決断に至るまでのデータ収集が難しい。
+										</dd>
+										<dt>3. よって, 買い手に交渉の余力がない。</dt>
+										<dd>
+											<p>
+												経済的の言葉を借りると、東京は「完全競争」な状態である。つまり、需要と供給が一致し、値段の交渉にそもそもどちら側に余裕がない。
+												<b>と、「売り手」が言う。</b>不完全な情報を持ちながら「買い手」にはこれが事実なのか、でなければ交渉をすべきなのか、はわかりかねない
+												希望物件は本当に適切な値段である場合、交渉するとリスクも伴い。「売り手」にとって交渉するメリットがない、故に次に「買い手」を優先するだろう
+											</p>
+										</dd>
+									</dl>
+
+
+
+
+									<p>
+					
+										私はこのような賃貸価格においての情報の非対称性を少しでも、低減したいと思っている。
+									
+									</ol>							
+									</p>
+							</div>
+							
+
+
+							<!-- <div class = "section reins"> 
+								<h2>REINS Description</h2>
+							</div> -->
+
+
+
+							<div class = "solution">
+								<h2>End-to-End Solution</h2>
+								<p>
+								私が作ったアプリで上記の課題に答え、「買い手」に情報を増やそうと思っている。
+								数多くの東京の賃貸情報を収集、集計、分析することによって、業界の人でなくても「買い手」が分析できるようにしたい。
+								ただ、集計レベルなら他のサイトに既にある。
+								</p>
+								
+								<p>
+								そのため、物件の月々の家賃を予測する機械学習のモデルを構築した。
+								</p>
+
+								<p>
+								賃貸を探しているとき、物件に関する基本情報を入寮すると、適切な値段をある程度把握できる。
+								</p>
+
+								<p>
+								ただ、このプロジェクトは「買い手」の不完全な情報で始まり、私もゼロベースでデータを収集し、前処理を行い、モデルを学習し、Webアプリを作るような４点でEnd-to-Endソリューションを作る必要があった。
+								</p>
+								
+								<ol>
+									<li>
+										まずは、<b>Webスクレイパを作ってデータを収集する必要があった。</b>
+										当時、APIなどが見つからずであったが、そもそも勉強のためにスクレイパーを作ることが目的だったため、
+										東京の23区に留まらず、全地域の賃貸住宅を公開サイトから探索できるようなスクリプトを作った。
+									</li>  
+									<li>
+										<b>生データに前処理をかけ、分析できるようなデータセットを作る必要があった</b>
+										その中に大きな課題は、Webからとった物件情報は元のデータベースからではなく、不動産に作られた物件。
+										そのため、サイト上はフォーマットなどが決まっている一方、間違いが多いことに気づいた。
+										ここのクレンジングでかなり時間を尽くした。
+										</li>
+										<span class="br"></span>
+										前処理に関連する一連のこと、駅の扱い。東京の賃貸価値は大きく最寄り駅によって影響あると仮説していた。
+										データセット作成においてダミー変数扱いやカテゴリ変数扱いなどの議論が自分の中にある。
+										ただ、線単位だけでは80件以上となり、駅単位でダミー変数扱いをするとよりデカい。
+										これによって非効率が発生するためいくつかの別扱いを検証している。</li>
+									<li>
+										次は <b>モデル学習の時間となる。</b> 
+										モデリング作業自体は割と普通な進め方であり、線形的、決定機などいくつかのモデルを試し、パラメータチューニングを行った。
+										
+									</li>
+									<li>
+										最後, <b>学習済みモデルをWebアプリにデプロイし、ユーザに物件情報を入力させる。</b> – 駅や賃貸の種類、これによって値段を予測する。.
+									</li>
+								</ol>
+							</div>
+
+
+							<div class = "future">
+								<h2>次ステップ</h2>
+								<p>
+								このプロジェクトを完成させるに向け、モデルの性能を上げることを目的にし、主に２つのタスクを想定する。
+								<ol>
+									<li><b>データの増量</b> - Webスクレイパーのスクリプトをより効率化し、中長期間に実行することによって
+										データを増やすことができる。
+										特にこのプロジェクトに東京の23区に絞らず東京の全地域を対象にしているが、
+										地域、地域をわたる線や駅、数多くのカテゴリーの変数が存在し、値段に大きく影響すると仮設する。
+										そのため、それぞれのカテゴリにデータ量が十分であることができるとより高い制度を期待する。
+									</li>
+										<li><b>フィーチャーの再検討</b> - 上記に関連するが、カテゴリ変数の扱いについていくつかの方法がある。
+											ただ（改めて）、実態としてカテゴリの量が多いので正しい扱いを理解できるまでには検証が必要。
+											既にデータセットのバリエーションやモデルを検証しているが、より多く試す余地があると考える。
+									</li>
+								</ol>
+								</p>
+							</div>
+
+							<!-- </section> -->
+						
+
+
+							
+						</section>
+
+				</div>
+
+			<!-- Footer -->
+
+			<!-- Copyright -->
+				<div id="copyright">
+					<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+				</div>
+
+		</div>
+
+	<!-- Scripts -->
+		<script src="../../assets/js/jquery.min.js"></script>
+		<script src="../../assets/js/jquery.scrollex.min.js"></script>
+		<script src="../../assets/js/jquery.scrolly.min.js"></script>
+		<script src="../../assets/js/browser.min.js"></script>
+		<script src="../../assets/js/breakpoints.min.js"></script>
+		<script src="../../assets/js/util.js"></script>
+		<script src="../../assets/js/main.js"></script>
+
+	</body>
+</html>
